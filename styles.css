@@ -1,0 +1,42 @@
+body {
+    font-family: gilroy;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: auto;
+}
+
+.container div {
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #999;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+}
+
+.container div:nth-child(3n+1) {
+    border-left: none;
+}
+
+.container div:nth-child(n+7) {
+    border-top: none;
+}
+
+.container div:hover {
+    background-color: #EEE;
+}
+
+.container .X {
+    color: #F00;
+}
+
+.container .O {
+    color: #00F;
+}
